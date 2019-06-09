@@ -7,20 +7,21 @@
 <body>
     <div class="message">Ask your question.</div>
     <input type="text" placeholder="question">
-    <button type="button" onclick="myFunction()" >Ask</button>
-    <div class="answer"></div>
+    <button type="button" onclick=myFunction();>Ask</button>
+    <div id="answer"></div>
 
     <script>
     var answers = ["Yes", "No", "Highly unlikely", "Are you fuckin kiddin me", "Doubtful", "You a dumb ho"]; 
     var SpecificAnswer;
     function myFunction() {
        var SpecificAnswer = answers[Math.floor(Math.random()*answers.length)];
+       document.getElementById("answer").innerHTML = SpecificAnswer;
     };
     
     const message = document.querySelector(".message");
     const question = document.querySelector("input");
     const button = document.querySelector("button");
-    const answer = document.getElementsByClassName(".answer").innerHTML = SpecificAnswer;
+    
     
     console.log(SpecificAnswer);
     </script>
