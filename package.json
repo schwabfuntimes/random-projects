@@ -1,0 +1,17 @@
+{
+  "name": "No-Name",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Devin Blankenship, Jesse Weis",
+  "license": "MIT",
+  "dependencies": {
+      "babel-preset-env": "1.5.2",
+      "babel-preset-react": "6.24.1"
+    },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
