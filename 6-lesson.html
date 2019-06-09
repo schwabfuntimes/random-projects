@@ -7,25 +7,25 @@
 <body>
     <div class="message">Ask your question.</div>
     <input type="text" placeholder="question">
-    <button type="button" onclick="myFunction()" >Ask</button>
+
+    <button type="button" onclick=myFunction();>Ask</button>
+
     <div id="answer"></div>
 
     <script>
     var answers = ["Yes", "No", "Highly unlikely", "Are you fuckin kiddin me", "Doubtful", "You a dumb ho"]; 
     var SpecificAnswer;
     function myFunction() {
-        var SpecificAnswer = answers[Math.floor(Math.random()*answers.length)];
-        console.log("in function");
-        console.log(SpecificAnswer);
-        document.getElementById("answer").innerText = SpecificAnswer;
+
+       var SpecificAnswer = answers[Math.floor(Math.random()*answers.length)];
+       document.getElementById("answer").innerHTML = SpecificAnswer;
+
     };
     
     const message = document.querySelector(".message");
     const question = document.querySelector("input");
     const button = document.querySelector("button");
-   // document.getElementById("answer").innerText = SpecificAnswer;
-    
-    //console.log(answers[Math.floor(Math.random()*answers.length)]);
+
     </script>
 </body>
 
