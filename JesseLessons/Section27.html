@@ -4,10 +4,28 @@
 </head>
 <body>
 <script>
+
+/* This part creates a paragraph so that we can use is later */
+var createP = document.createElement("p");
+createP.innerHTML = ("This is how many times you've clicked the button");
+document.body.appendChild(createP);
+/* This part creates a paragraph so that we can use is later */
+
+/* This part creates a button and adds a class and style*/
+var createButton = document.createElement("button");
+createButton.innerHTML = "Click Me";
+document.body.appendChild(createButton);
+createButton.setAttribute('class', 'mainButton');
+createButton.setAttribute('style', 'background-color:red;margin-left:2em;');
+
+/* This part creates a button and adds a class and style*/
     
+/*window.addEventListener ('load' loadListener);
     
-    var happy = "pain";
+function loadListener(){
     
+}
+    */
     
     
     
